@@ -1,0 +1,103 @@
+.page {
+  padding: var(--spacing-8) 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.section {
+  margin-bottom: var(--spacing-12);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-6);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.placeholder {
+  color: var(--color-gray-400);
+  font-style: italic;
+  margin-bottom: var(--spacing-4);
+}
+
+/* Philosophy */
+.philosophyGrid {
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .philosophyGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.philosophyCard {
+  text-align: center;
+}
+
+.philosophyCard h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-2);
+}
+
+.philosophyCard p {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Instructors */
+.instructorGrid {
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .instructorGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.instructorCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.instructorInfo {
+  padding: var(--spacing-4);
+  text-align: center;
+}
+
+.instructorInfo h3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-1);
+}
+
+.instructorInfo p {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+
+/* Facilities */
+.facilityGrid {
+  display: grid;
+  gap: var(--spacing-4);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .facilityGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

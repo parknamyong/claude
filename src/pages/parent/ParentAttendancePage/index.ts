@@ -1,0 +1,1 @@
+export { ParentAttendancePage } from './ParentAttendancePage'

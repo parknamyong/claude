@@ -1,0 +1,133 @@
+import type { Program, ClassSlot } from '@/types'
+
+export const MOCK_PROGRAMS: Program[] = [
+  {
+    id: 'prog-1',
+    name: '기초 음악',
+    slug: 'basic',
+    shortDescription: '음악의 기본기를 탄탄하게! 리듬, 멜로디, 화음의 기초를 배웁니다.',
+    description:
+      'AI 기술을 활용하여 음악의 기본 요소인 리듬, 멜로디, 화음을 재미있게 학습합니다. 음악을 처음 접하는 초등학생에게 적합한 프로그램입니다.',
+    curriculum: [
+      '음악의 기본 요소 이해',
+      '리듬 패턴 학습',
+      '멜로디 만들기',
+      '간단한 화음 익히기',
+      'AI를 활용한 작곡 체험',
+    ],
+    targetGrade: '초등 1-3학년',
+    duration: '50분',
+    price: 150000,
+    image: '/images/program-basic.jpg',
+  },
+  {
+    id: 'prog-2',
+    name: '보컬',
+    slug: 'vocal',
+    shortDescription: '나만의 목소리를 찾아요! 발성과 호흡법을 배우고 노래 실력을 키웁니다.',
+    description:
+      'AI 보컬 트레이닝 시스템을 통해 올바른 발성법과 호흡법을 배웁니다. 자신감 있게 노래할 수 있도록 개인별 맞춤 피드백을 제공합니다.',
+    curriculum: [
+      '올바른 발성법',
+      '호흡 훈련',
+      '음정과 박자 맞추기',
+      '감정 표현하기',
+      'AI 피드백을 통한 개인 연습',
+    ],
+    targetGrade: '초등 2-6학년',
+    duration: '50분',
+    price: 180000,
+    image: '/images/program-vocal.jpg',
+  },
+  {
+    id: 'prog-3',
+    name: '연주',
+    slug: 'instrument',
+    shortDescription: '악기와 친해지기! 피아노, 기타 등 다양한 악기를 경험합니다.',
+    description:
+      'AI 연주 보조 시스템과 함께 다양한 악기를 체험하고 배웁니다. 악기별 기초부터 간단한 곡 연주까지 단계별로 학습합니다.',
+    curriculum: [
+      '악기 소개 및 선택',
+      '기초 연주법',
+      '악보 읽기',
+      '간단한 곡 연습',
+      'AI 합주 체험',
+    ],
+    targetGrade: '초등 3-6학년',
+    duration: '60분',
+    price: 200000,
+    image: '/images/program-instrument.jpg',
+  },
+]
+
+export const MOCK_CLASS_SLOTS: ClassSlot[] = [
+  // 기초 음악
+  {
+    id: 'slot-1',
+    programId: 'prog-1',
+    name: '월수 A반',
+    dayOfWeek: ['월', '수'],
+    time: '15:00-15:50',
+    capacity: 8,
+    enrolled: 6,
+    waitlist: 0,
+    status: 'open',
+  },
+  {
+    id: 'slot-2',
+    programId: 'prog-1',
+    name: '화목 B반',
+    dayOfWeek: ['화', '목'],
+    time: '16:00-16:50',
+    capacity: 8,
+    enrolled: 8,
+    waitlist: 2,
+    status: 'closed',
+  },
+  // 보컬
+  {
+    id: 'slot-3',
+    programId: 'prog-2',
+    name: '월수 A반',
+    dayOfWeek: ['월', '수'],
+    time: '16:00-16:50',
+    capacity: 6,
+    enrolled: 4,
+    waitlist: 0,
+    status: 'open',
+  },
+  {
+    id: 'slot-4',
+    programId: 'prog-2',
+    name: '토요 B반',
+    dayOfWeek: ['토'],
+    time: '10:00-10:50',
+    capacity: 6,
+    enrolled: 5,
+    waitlist: 0,
+    status: 'open',
+  },
+  // 연주
+  {
+    id: 'slot-5',
+    programId: 'prog-3',
+    name: '화목 A반',
+    dayOfWeek: ['화', '목'],
+    time: '17:00-18:00',
+    capacity: 6,
+    enrolled: 6,
+    waitlist: 1,
+    status: 'closed',
+  },
+  {
+    id: 'slot-6',
+    programId: 'prog-3',
+    name: '토요 B반',
+    dayOfWeek: ['토'],
+    time: '14:00-15:00',
+    capacity: 6,
+    enrolled: 3,
+    waitlist: 0,
+    status: 'open',
+  },
+]

@@ -1,0 +1,237 @@
+.page {
+  /* Page styles */
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  gap: var(--spacing-8);
+  padding: var(--spacing-12) var(--spacing-4);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: var(--spacing-16) var(--spacing-4);
+  }
+}
+
+.heroContent {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .heroContent {
+    text-align: left;
+  }
+}
+
+.heroTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+  margin-bottom: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+.heroDescription {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-6);
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .heroActions {
+    justify-content: flex-start;
+  }
+}
+
+.heroImage {
+  order: -1;
+}
+
+@media (min-width: 1024px) {
+  .heroImage {
+    order: 0;
+  }
+}
+
+/* Section */
+.section {
+  padding: var(--spacing-12) 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.sectionDescription {
+  color: var(--color-gray-600);
+  margin-top: var(--spacing-2);
+}
+
+.viewAll {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Programs */
+.programGrid {
+  display: grid;
+  gap: var(--spacing-6);
+}
+
+@media (min-width: 768px) {
+  .programGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.programCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.programContent {
+  padding: var(--spacing-4);
+}
+
+.programTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-2);
+}
+
+.programDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-2);
+}
+
+.programMeta {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+  margin-bottom: var(--spacing-4);
+}
+
+/* CTA Section */
+.ctaSection {
+  background-color: var(--color-primary);
+  padding: var(--spacing-12) var(--spacing-4);
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-2);
+}
+
+.ctaDescription {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary-light);
+  margin-bottom: var(--spacing-6);
+}
+
+/* Reviews */
+.reviewGrid {
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .reviewGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reviewCard {
+  padding: var(--spacing-4);
+}
+
+.reviewRating {
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-2);
+}
+
+.reviewContent {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-3);
+}
+
+.reviewAuthor {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+/* Notices */
+.noticeList {
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.noticeItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-gray-200);
+  transition: background-color var(--transition-fast);
+}
+
+.noticeItem:last-child {
+  border-bottom: none;
+}
+
+.noticeItem:hover {
+  background-color: var(--color-gray-50);
+}
+
+.noticeTitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-900);
+}
+
+.important {
+  color: var(--color-error);
+  margin-right: var(--spacing-2);
+}
+
+.noticeDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}

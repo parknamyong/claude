@@ -1,0 +1,169 @@
+.page {
+  padding: var(--spacing-8) 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.content {
+  display: grid;
+  gap: var(--spacing-8);
+}
+
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 360px;
+  }
+}
+
+.mainContent {
+  /* Main content area */
+}
+
+.image {
+  margin-bottom: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.section {
+  margin-bottom: var(--spacing-8);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-4);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.description {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
+  line-height: var(--line-height-relaxed);
+}
+
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.curriculumItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+  background-color: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.curriculumNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  flex-shrink: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  /* Sidebar area */
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--spacing-4));
+    align-self: start;
+  }
+}
+
+.infoCard {
+  padding: var(--spacing-6);
+}
+
+.infoTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-4);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--color-gray-200);
+  margin-bottom: var(--spacing-4);
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoLabel {
+  color: var(--color-gray-500);
+  font-size: var(--font-size-sm);
+}
+
+.infoValue {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.slots {
+  margin-bottom: var(--spacing-6);
+}
+
+.slotsTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-3);
+}
+
+.slotItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-3);
+  background-color: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-2);
+}
+
+.slotInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.slotName {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.slotTime {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.enrollButton {
+  display: block;
+}
+
+.enrollButton button {
+  width: 100%;
+}
