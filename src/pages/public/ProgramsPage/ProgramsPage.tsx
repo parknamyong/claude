@@ -44,7 +44,7 @@ export function ProgramsPage() {
                     <div className={styles.metaItem}>
                       <span className={styles.metaLabel}>수강료</span>
                       <span className={styles.metaValue}>
-                        월 {program.price.toLocaleString()}원
+                        {program.price.toLocaleString()}원 / {program.sessions}회
                       </span>
                     </div>
                   </div>

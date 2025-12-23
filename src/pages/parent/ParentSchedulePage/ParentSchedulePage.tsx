@@ -8,8 +8,6 @@ export function ParentSchedulePage() {
 
       <Card className={styles.calendarCard}>
         <h3 className={styles.monthTitle}>2025년 1월</h3>
-        <p className={styles.placeholder}>캘린더 뷰 (다음 PR에서 구현)</p>
-
         <div className={styles.calendarPlaceholder}>
           <div className={styles.weekHeader}>
             <span>일</span>

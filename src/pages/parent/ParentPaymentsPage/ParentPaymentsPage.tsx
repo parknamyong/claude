@@ -7,8 +7,6 @@ export function ParentPaymentsPage() {
       <PageHeader title="결제 내역" description="수강료 결제 내역을 확인하세요" />
 
       <Card className={styles.tableCard}>
-        <p className={styles.placeholder}>결제 내역 상세 (다음 PR에서 구현)</p>
-
         <div className={styles.table}>
           <div className={styles.tableHeader}>
             <span>결제일</span>

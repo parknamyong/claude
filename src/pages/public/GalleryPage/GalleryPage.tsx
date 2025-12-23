@@ -24,8 +24,6 @@ export function GalleryPage() {
             </div>
           ))}
         </div>
-
-        <p className={styles.placeholder}>이미지 모달 및 필터 (다음 PR에서 구현)</p>
       </div>
     </div>
   )

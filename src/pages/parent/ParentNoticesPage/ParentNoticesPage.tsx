@@ -23,8 +23,6 @@ export function ParentNoticesPage() {
           </Card>
         ))}
       </div>
-
-      <p className={styles.placeholder}>읽음/안읽음 상태, 페이지네이션 (다음 PR에서 구현)</p>
     </div>
   )
 }

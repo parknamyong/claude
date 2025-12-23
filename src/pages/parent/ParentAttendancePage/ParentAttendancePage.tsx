@@ -27,8 +27,6 @@ export function ParentAttendancePage() {
 
       <Card className={styles.tableCard}>
         <h3 className={styles.tableTitle}>출석 기록</h3>
-        <p className={styles.placeholder}>출석 기록 상세 (다음 PR에서 구현)</p>
-
         <div className={styles.table}>
           <div className={styles.tableHeader}>
             <span>날짜</span>

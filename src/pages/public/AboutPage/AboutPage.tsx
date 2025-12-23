@@ -32,7 +32,6 @@ export function AboutPage() {
         {/* 강사 소개 */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>강사 소개</h2>
-          <p className={styles.placeholder}>강사 정보 (다음 PR에서 구현)</p>
           <div className={styles.instructorGrid}>
             <Card className={styles.instructorCard}>
               <ImagePlaceholder height="200px" label="강사 사진" />
@@ -61,7 +60,6 @@ export function AboutPage() {
         {/* 시설 소개 */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>시설 소개</h2>
-          <p className={styles.placeholder}>시설 정보 (다음 PR에서 구현)</p>
           <div className={styles.facilityGrid}>
             <ImagePlaceholder height="250px" label="교실 사진 1" />
             <ImagePlaceholder height="250px" label="교실 사진 2" />

@@ -30,7 +30,6 @@ export function ParentCoursesPage() {
               <span>김음악 선생님</span>
             </div>
           </div>
-          <p className={styles.placeholder}>상세 정보 (다음 PR에서 구현)</p>
         </Card>
 
         <Card className={styles.courseCard}>
@@ -56,7 +55,6 @@ export function ParentCoursesPage() {
               <span>이보컬 선생님</span>
             </div>
           </div>
-          <p className={styles.placeholder}>상세 정보 (다음 PR에서 구현)</p>
         </Card>
       </div>
     </div>

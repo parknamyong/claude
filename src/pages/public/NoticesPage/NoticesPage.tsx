@@ -31,8 +31,6 @@ export function NoticesPage() {
             </Link>
           ))}
         </div>
-
-        <p className={styles.placeholder}>페이지네이션 (다음 PR에서 구현)</p>
       </div>
     </div>
   )

@@ -39,8 +39,6 @@ export function ReviewsPage() {
             </Card>
           ))}
         </div>
-
-        <p className={styles.placeholder}>후기 필터 및 페이지네이션 (다음 PR에서 구현)</p>
       </div>
     </div>
   )
