@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
+  base: '/claude/',   // ✅ 이 줄만 추가
   plugins: [react()],
   resolve: {
     alias: {
@@ -10,3 +11,4 @@ export default defineConfig({
     },
   },
 })
+
