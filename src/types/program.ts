@@ -7,6 +7,7 @@ export interface Program {
   curriculum: string[]
   targetGrade: string
   duration: string
+  sessions: number // 회차 (4회, 6회 등)
   price: number
   image: string
 }

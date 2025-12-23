@@ -1,14 +1,14 @@
 :root {
-  /* Primary - 음악/교육 느낌의 파란 계열 */
-  --color-primary: #4f46e5;
-  --color-primary-dark: #4338ca;
-  --color-primary-light: #818cf8;
-  --color-primary-bg: #eef2ff;
+  /* Primary - 메인 블루 (브리프 기준: #2563EB) */
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #3b82f6;
+  --color-primary-bg: #eff6ff;
 
-  /* Secondary - 따뜻한 느낌 */
-  --color-secondary: #f59e0b;
-  --color-secondary-dark: #d97706;
-  --color-secondary-light: #fbbf24;
+  /* Secondary - 서브 퍼플 (브리프 기준: #7C3AED) */
+  --color-secondary: #7c3aed;
+  --color-secondary-dark: #6d28d9;
+  --color-secondary-light: #8b5cf6;
 
   /* Neutral */
   --color-white: #ffffff;
@@ -23,8 +23,9 @@
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
 
-  /* Status */
+  /* Status / Accent (브리프 기준: #10B981) */
   --color-success: #10b981;
+  --color-accent: #10b981;
   --color-success-bg: #d1fae5;
   --color-error: #ef4444;
   --color-error-bg: #fee2e2;
