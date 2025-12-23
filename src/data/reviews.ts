@@ -4,6 +4,7 @@ export const MOCK_REVIEWS: Review[] = [
   {
     id: 'review-1',
     programId: 'prog-1',
+    programName: '기초 음악',
     parentName: '김**',
     studentGrade: '초등 2학년',
     content:
@@ -14,6 +15,7 @@ export const MOCK_REVIEWS: Review[] = [
   {
     id: 'review-2',
     programId: 'prog-2',
+    programName: '보컬 트레이닝',
     parentName: '이**',
     studentGrade: '초등 4학년',
     content:
@@ -24,6 +26,7 @@ export const MOCK_REVIEWS: Review[] = [
   {
     id: 'review-3',
     programId: 'prog-3',
+    programName: '악기 연주',
     parentName: '박**',
     studentGrade: '초등 5학년',
     content:
@@ -34,6 +37,7 @@ export const MOCK_REVIEWS: Review[] = [
   {
     id: 'review-4',
     programId: 'prog-1',
+    programName: '기초 음악',
     parentName: '최**',
     studentGrade: '초등 1학년',
     content:
@@ -44,6 +48,7 @@ export const MOCK_REVIEWS: Review[] = [
   {
     id: 'review-5',
     programId: 'prog-2',
+    programName: '보컬 트레이닝',
     parentName: '정**',
     studentGrade: '초등 3학년',
     content: '노래 부르는 것을 부끄러워했는데 이제는 집에서도 자신있게 노래해요. 감사합니다!',

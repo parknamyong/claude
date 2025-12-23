@@ -1,6 +1,7 @@
 export interface Review {
   id: string
   programId: string
+  programName: string
   parentName: string
   studentGrade: string
   content: string
