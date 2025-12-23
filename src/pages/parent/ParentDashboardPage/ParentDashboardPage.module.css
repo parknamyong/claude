@@ -2,6 +2,9 @@
   /* Page styles */
 }
 
+/* ============================================================
+   Stats Grid
+   ============================================================ */
 .statsGrid {
   display: grid;
   gap: var(--spacing-4);
@@ -31,66 +34,392 @@
   color: var(--color-primary);
 }
 
-.content {
-  display: grid;
-  gap: var(--spacing-6);
-}
-
-@media (min-width: 768px) {
-  .content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
+/* ============================================================
+   Section
+   ============================================================ */
 .section {
-  /* Section styles */
+  margin-bottom: var(--spacing-8);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-4);
 }
 
 .sectionTitle {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--spacing-4);
 }
 
-.placeholder {
-  color: var(--color-gray-400);
-  font-style: italic;
+.sectionLink {
   font-size: var(--font-size-sm);
-  margin-bottom: var(--spacing-4);
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
-.scheduleCard,
-.noticeCard {
+.sectionLink:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   Two Column Layout
+   ============================================================ */
+.twoColumn {
+  display: grid;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+  .twoColumn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.twoColumn .section {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   Enrollment Cards
+   ============================================================ */
+.enrollmentCards {
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .enrollmentCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.enrollmentCard {
+  padding: var(--spacing-5);
+}
+
+.enrollmentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.enrollmentProgram {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin: var(--spacing-2) 0 var(--spacing-1);
+}
+
+.enrollmentStudent {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.enrollmentProgress {
+  text-align: center;
+}
+
+.progressRing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-bg), var(--color-secondary-bg));
+  border: 3px solid var(--color-primary);
+}
+
+.progressValue {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.progressLabel {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+  margin-top: var(--spacing-1);
+  display: block;
+}
+
+.enrollmentBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.enrollmentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+}
+
+.infoIcon {
+  font-size: var(--font-size-base);
+}
+
+.instructorMini {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+  background-color: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.instructorName {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.instructorRole {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+/* ============================================================
+   Schedule Card
+   ============================================================ */
+.scheduleCard {
   padding: var(--spacing-4);
 }
 
-.scheduleItem,
-.noticeItem {
+.scheduleItem {
   display: flex;
-  justify-content: space-between;
+  gap: var(--spacing-4);
   padding: var(--spacing-3) 0;
   border-bottom: 1px solid var(--color-gray-100);
-  font-size: var(--font-size-sm);
 }
 
-.scheduleItem:last-child,
-.noticeItem:last-child {
+.scheduleItem:last-child {
   border-bottom: none;
 }
 
 .scheduleDate {
-  color: var(--color-gray-500);
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
 }
 
-.scheduleProgram {
-  font-weight: var(--font-weight-medium);
-}
-
-.noticeTitle {
+.dateDay {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
   color: var(--color-gray-900);
 }
 
-.noticeDate {
-  color: var(--color-gray-400);
+.dateTime {
   font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.scheduleInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.scheduleProgram {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.scheduleStudent {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+/* ============================================================
+   Attendance Card
+   ============================================================ */
+.attendanceCard {
+  padding: var(--spacing-4);
+}
+
+.attendanceItem {
+  padding: var(--spacing-4) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.attendanceItem:last-child {
+  border-bottom: none;
+}
+
+.attendanceHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-2);
+}
+
+.attendanceStudent {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.attendanceProgram {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.attendanceStats {
+  display: flex;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+  font-size: var(--font-size-xs);
+}
+
+.statPresent {
+  color: var(--color-accent);
+}
+
+.statLate {
+  color: var(--color-warning);
+}
+
+.statAbsent {
+  color: var(--color-error);
+}
+
+.attendanceBar {
+  height: 8px;
+  background-color: var(--color-gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  display: flex;
+}
+
+.barPresent {
+  background-color: var(--color-accent);
+  height: 100%;
+}
+
+.barLate {
+  background-color: var(--color-warning);
+  height: 100%;
+}
+
+/* ============================================================
+   Payment Card
+   ============================================================ */
+.paymentCard {
+  padding: var(--spacing-4);
+}
+
+.paymentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.paymentItem:last-child {
+  border-bottom: none;
+}
+
+.paymentInfo {
+  flex: 1;
+}
+
+.paymentHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-1);
+}
+
+.paymentProgram {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.paymentStudent {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-1);
+}
+
+.paymentDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-400);
+}
+
+.paymentAmount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-2);
+}
+
+.amount {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+/* ============================================================
+   Notice Card
+   ============================================================ */
+.noticeCard {
+  padding: var(--spacing-4);
+}
+
+.noticeItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--spacing-3) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.noticeItem:last-child {
+  border-bottom: none;
+}
+
+.noticeContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.noticeTitleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-1);
+}
+
+.noticeTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.noticeExcerpt {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.noticeDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-400);
+  white-space: nowrap;
+  margin-left: var(--spacing-2);
 }
