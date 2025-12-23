@@ -1,0 +1,1 @@
+export { ParentNoticesPage } from './ParentNoticesPage'

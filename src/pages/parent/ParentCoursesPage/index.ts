@@ -1,0 +1,1 @@
+export { ParentCoursesPage } from './ParentCoursesPage'

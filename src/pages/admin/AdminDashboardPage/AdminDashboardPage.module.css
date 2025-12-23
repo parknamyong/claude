@@ -1,0 +1,357 @@
+.page {
+  padding: var(--spacing-lg);
+}
+
+/* ============================================
+   통계 카드 그리드
+   ============================================ */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.statCard.warning {
+  border-left: 4px solid var(--color-warning);
+}
+
+.statCard.highlight {
+  border-left: 4px solid var(--color-primary);
+}
+
+.statIcon {
+  font-size: var(--font-size-2xl);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+.statContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.statTitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-xs);
+}
+
+.statValue {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.statLink {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.statLink:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   메인 콘텐츠 그리드
+   ============================================ */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.sectionLink {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.sectionLink:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   오늘의 수업
+   ============================================ */
+.scheduleCard,
+.enrollmentCard,
+.alertCard {
+  flex: 1;
+}
+
+.scheduleItem {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+  align-items: center;
+}
+
+.scheduleItem:last-child {
+  border-bottom: none;
+}
+
+.scheduleTime {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  min-width: 90px;
+}
+
+.scheduleInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.scheduleProgram {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-gray-900);
+}
+
+.scheduleSlot {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.scheduleCount {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  min-width: 40px;
+  text-align: right;
+}
+
+.emptyMessage {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-400);
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+}
+
+/* ============================================
+   최근 수강 신청
+   ============================================ */
+.enrollmentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+  gap: var(--spacing-md);
+}
+
+.enrollmentItem:last-child {
+  border-bottom: none;
+}
+
+.enrollmentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.enrollmentName {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-gray-900);
+}
+
+.enrollmentProgram {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}
+
+.enrollmentMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.enrollmentDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-400);
+}
+
+.cardActions {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-gray-100);
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================================
+   알림
+   ============================================ */
+.alertItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.alertItem:last-child {
+  margin-bottom: 0;
+}
+
+.alertWarning {
+  background-color: var(--color-warning-light, #fef3c7);
+}
+
+.alertInfo {
+  background-color: var(--color-info-light, #dbeafe);
+}
+
+.alertSuccess {
+  background-color: var(--color-success-light, #d1fae5);
+}
+
+.alertError {
+  background-color: var(--color-error-light, #fee2e2);
+}
+
+.alertIcon {
+  font-size: var(--font-size-base);
+  flex-shrink: 0;
+}
+
+.alertText {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  flex: 1;
+}
+
+.alertLink {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.alertLink:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   빠른 메뉴
+   ============================================ */
+.quickMenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.quickMenuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.quickMenuItem:hover {
+  background-color: var(--color-gray-50);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.quickMenuIcon {
+  font-size: var(--font-size-2xl);
+}
+
+.quickMenuLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  font-weight: 500;
+}
+
+/* ============================================
+   반응형
+   ============================================ */
+@media (max-width: 768px) {
+  .page {
+    padding: var(--spacing-md);
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .quickMenu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .statLink {
+    margin-top: var(--spacing-sm);
+  }
+}

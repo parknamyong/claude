@@ -1,0 +1,82 @@
+.page {
+  padding: var(--spacing-8) 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.reviewGrid {
+  display: grid;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+  .reviewGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviewGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reviewCard {
+  padding: var(--spacing-4);
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-3);
+}
+
+.reviewRating {
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.reviewProgram {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-sm);
+}
+
+.reviewContent {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-4);
+}
+
+.reviewFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-3);
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.reviewAuthor {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-600);
+}
+
+.reviewDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-400);
+}
+
+.placeholder {
+  text-align: center;
+  color: var(--color-gray-400);
+  font-style: italic;
+}
